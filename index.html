@@ -5,32 +5,145 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- FONT AWSOME -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- BOOTSTRAP -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <!-- LOCAL CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <title>Bootstrap Theme</title>
+  <title>Krazy Cookies</title>
 </head>
 
 <body>
   <!-- STORY BEGINS -->
+  <!-- HEADER = NAVBAR + BANNER -->
+  <header id="header">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg px-4">
+      <a href="#" class="navbar-brand text-primary font-weight-bold">
+        Joeleans Bakery
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+        <span class="toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav" class="text-capitalize mx-auto">
+          <li class="nav-item active">
+            <a href="#header" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#store" class="nav-link">Store</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li cass="nav-link">
+            <a href="#cookies" class="nav-link">Order</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex">
+          <!-- PHONE INFO -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3">
+              <i class="fas fa-phone"></i>
+            </span>
+            <p class="mb-0">
+              (323) 738-9293
+            </p>
+          </div>
+          <!-- SHOPPPING CART -->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info_icon mr-lg-3">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+            <p class="mb-0 text-capitalize">
+              <span id="item-count">2</span>
+              items - $
+              <span class="item-total">
+                10.49
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAV -->
+
+    <!-- BANNER -->
+
+    <!-- END OF BANNER -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <!-- COL 10/12 -->
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">
+            Welcome to <strong class="banner-title">Joeleans</strong>
+          </h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+        </div>
+        <!-- COL 2/12 -->
+        <div class="cart" id="cart">
+          <!-- CART ITEM -->
+          <img src="https://source.unsplash.com/1920x1080/?cake" class="img-fluid rounded-circle" id="item-img" alt="" />
+          <div class="item-text">
+            <p id="cart-item-title" class="font-weight-bold mb-0">
+              Cart Item
+            </p><span>$</span>
+            <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+          </div>
+          <!-- TRASH ITEM -->
+          <div>
+            <a href="#" id="cart-item-remove" class="cart-item-remove">
+              <i ckass="fas fa-trash"></i>
+            </a>
+          </div>
+          <!-- END OF CART ITEM -->
+
+          <!-- CART ITEM 2 -->
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="https:source.unsplash.com/810x540/?cupcake" class="img-fluid rounded-circle" id="item-img" alt="cupcakes image" />
+            <div class="item-text">
+              <p id="cart-item-title" class="font-weight-bold mb-0">
+                Cart Item
+              </p><span>$</span>
+              <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+            </div>
+            <!-- CART REMOVE TAG -->
+            <a href="#" id="cart-item-remove" class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+          <!-- END OF CART ITEM -->
+
+          <!-- TOTAL -->
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>Total</h5>
+            <h5>$ <strong id="cart-total" class="font-weight-bold">10.00</strong></h5>
+          </div>
+          <!-- END OF TOTAL -->
+          <!-- CARD BUTTONS -->
+          <div class="card-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-dark text-uppercase">Clear Cart</a>
+            <a href="#" id="clear-cart" class="btn btn-pink text-uppercase">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
 
 
 
 
-
-
-
-
-    
+  <!-- FONT AWSOME -->
+  <script src="https://kit.fontawesome.com/10a1582225.js"></script>
   <!-- jquery -->
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-
-    <!-- JAVASCRIPT FOR BOOTSTRAP CLASSES -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- JAVASCRIPT FOR BOOTSTRAP CLASSES -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <!-- JAVASCRIPT -->
